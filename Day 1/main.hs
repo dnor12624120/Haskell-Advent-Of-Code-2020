@@ -1,9 +1,6 @@
 import System.IO  
 import Control.Monad
 
-entries :: [Int]
-entries = [1721, 979, 366, 299, 675, 1456]
-
 findProduct :: [Int] -> Int
 findProduct list = head [x * y | x <- list, y <- list, x + y == 2020]
 
